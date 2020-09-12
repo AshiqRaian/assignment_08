@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+body{
+	font-family: 'Jost', sans-serif;
+}
+.navbar-brand img{
+	width: 150px;
+	filter: drop-shadow(-4px 2px 2px black);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: rgb(71 178 228);
+}
+header{
+	background: #37517E;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+header h1{
+	font-size: 45px;
+	line-height: 1.4;
+	margin-top: 20%;
+}
+header .btn{
+	margin-bottom: 18%;
+	font-weight: 500;
+	line-height: 1.8;
+	display: inline-flex;
+	align-items: center;
+}
+header .btn:hover{
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+	color: #fff;
+}
+header i{
+	font-size: 40px;
+}
+.team{
+	padding: 3%;
+	align-self: center;
+}
+h1{
+	font-size: 32px;
+	line-height: 1.4;
+	font-weight: 700;
+}
+h2{
+	font-size: 20px;
+	margin-top: 25px;
+}
+h3{
+	font-size: 25px;
+	font-weight: 600;
+}
+h4{
+	font-size: 65px;
+	font-weight: 600;
+}
+p{
+	font-size: 18px;
+	line-height: 1.7;
+	margin: 35px 0;
+}
+i{
+	font-size: 40px;
+}
+section{
+	padding: 10%;
+}
+span{
+	font-size: 30px;
+	color: blue;
+}
+.service{
+	background: #EAF5FC;
+	background-image: url(../images/named.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: 50%;
+	background-position: left center;
+}
+.question ul li{
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 3%;
+}
+.question ul li span{
+	background: #000;
+	font-size: 25px;
+	color: #fff;
+	border-radius: 3px;
+}
+.question ul li i{
+	font-size: 25px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: inline-block;
+}
+.question ul p{
+	margin: 0 0 4%;
+}
+.question ul li[aria-expanded="false"] i{}
+.question ul li[aria-expanded="true"] i{
+	transform: rotate(90deg);
+}
+.solution, footer{
+	background: #445E89;
+}
+.solution p{
+	margin-bottom: 13%;
+}
+.range, .form, .review{
+	background: #EAF5FC;
+}
+.review ul li:last-child{
+	border-left: 1px solid black;
+	padding-left: 7%;
+	margin-left: 7%; 
+}
+.review .btn{
+	font-weight: 500;
+	line-height: 1.8;
+	display: inline-flex;
+	align-items: center;
+	margin-top: 10%;
+	padding: 2% 5%;
+}
+.dollar{
+	font-size: 35px;
+	font-weight: 500;
+	margin: 0 0 -5%;
+}
+.dollar span{
+	font-size: 60px;
+	color: #000;
+}
+.list-group-flush{
+	display: contents;
+}
+.list-group-item{
+	align-items: center;
+	display: inline-flex;
+	padding-left: 10%;
+}
+.form label{
+	font-size: 24px;
+}
+.form .form-check label{
+	font-size: 14px;
+}
+.form button{
+	margin-top: 53px;
+}
+.btn-group i{
+	font-size: 25px;
+}
+hr{
+	margin-top: 4% !important;
+}
+footer h1{
+	font-size: 20px;
+	margin: 20% 0 15%;
+}
+footer a{
+	font-size: 18px;
+	text-decoration: none;
+	color: #adadad;
+	font-weight: bold;
+	line-height: 2.5;
+}
+footer p, footer p i{
+	color: #adadad;
+	font-size: 14px;
+	margin-top: 14px;
+}
+.offer .market p{
+ 	margin-bottom: 10%;
+}
+.feature a {
+	display: inline-flex;
+	align-items: center;
+}
+.feature a i{
+	font-size: 20px;
+}
+.offer .card:hover{
+	cursor: pointer;
+    border-top-color: blue;
+    border-top-width: 2px;
+    transform: scaleY(1.07);
+    transition: 0.3s ease; 
+}
+.card-body{
+	padding: 8% 12%;
+}
+
+@media (max-width: 1399px) {
+	header{
+		background-size: 60%;
+	}
+}
+
+@media (max-width: 1199px) {
+	header, .service{
+		background-size: 50%;
+	}
+}
+
+@media (max-width: 991px) {
+	header, .service{
+		background-size: 45%;
+	}
+}
+@media (max-width: 767px) {
+	header, .service{
+		background-size: 0;
+	}
+	.range, .offer{
+		padding: 0;
+	}
+	.card-body{
+	padding: 8%;
+	}
+}
+
+@media (max-width: 575px) {
+	section{
+		padding: 7% 0;
+	}
+	body{
+		text-align: center;
+	}
+	footer{
+		padding-top: 10%;
+	}
+	footer h1{
+		margin: 0;
+	}
+	h3{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 40px;
+	}
+	.question ul {
+		text-align: left;
+	}
+	.review .btn{
+		padding: 2% 3%;
+	}
+	.offer .card{
+		width: 85%;
+		margin: 0 auto;
+	}
+	.offer ul li{
+		justify-content: center;
+	}
+	.offer .btn, .plan, .business {
+		margin: 0;
+	}
+	.dollar span{
+		font-size: 45px;
+	}
+	.offer .card:hover{
+  		transform: inherit;
+  		cursor: inherit;
+	}
+}
